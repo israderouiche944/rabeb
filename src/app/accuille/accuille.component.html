@@ -1,0 +1,100 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand d-flex align-items-center" routerLink="/accueil">
+        <i class="fas fa-umbrella-beach text-primary me-2"></i>
+        <span class="site-title">Saha Beach</span>
+      </a>
+      <div class="navbar-nav ms-auto d-flex flex-row gap-3">
+        <a class="nav-link"  >Accueil</a>
+        <a class="nav-link"  [routerLink]="['/Service']" >Services</a>
+        <a class="nav-link"  [routerLink]="['/Maison']">Maisons d'hôtes</a>
+        <a class="nav-link"  [routerLink]="['/Cantact']" routerLinkActive="active">Contact</a>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Contenu de la page -->
+  <div style="margin-top: 100px;"> <!-- pour compenser la navbar fixe -->
+  </div>
+  <div class="container py-5">
+    <h1 class="text-center mb-5">Nos Services</h1>
+  
+    <div class="row g-4">
+  
+      <!-- Service Petit-déjeuner -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-lg text-center">
+          <div class="card-body p-4">
+            <div class="mb-3">
+              <i class="fas fa-utensils fa-3x text-primary"></i>
+            </div>
+            <h4 class="card-title">Petit-déjeuner Gourmand</h4>
+            <p class="text-muted">Buffet varié pour bien commencer la journée</p>
+            <ul class="list-unstyled text-start">
+              <li><i class="fas fa-check-circle text-success me-2"></i>Viennoiseries fraîches</li>
+              <li><i class="fas fa-check-circle text-success me-2"></i>Pain maison</li>
+              <li><i class="fas fa-check-circle text-success me-2"></i>Pâtisseries orientales</li>
+              <li><i class="fas fa-check-circle text-success me-2"></i>Crêpes, pancakes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Service Événements -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-lg text-center">
+          <div class="card-body p-4">
+            <div class="mb-3">
+              <i class="fas fa-glass-cheers fa-3x text-primary"></i>
+            </div>
+            <h4 class="card-title">Événements Spéciaux</h4>
+            <p class="text-muted">Un cadre enchanteur pour vos fêtes</p>
+            <ul class="list-unstyled text-start">
+              <li><i class="fas fa-check-circle text-success me-2"></i>Musique live, DJ</li>
+              <li><i class="fas fa-check-circle text-success me-2"></i>Buffets personnalisés</li>
+              <li><i class="fas fa-check-circle text-success me-2"></i>Photographe professionnel</li>
+              <li><i class="fas fa-check-circle text-success me-2"></i>Bar à cocktails</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Service Ménage -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-lg text-center">
+          <div class="card-body p-4">
+            <div class="mb-3">
+              <i class="fas fa-spa fa-3x text-primary"></i>
+            </div>
+            <h4 class="card-title">Service de Ménage</h4>
+            <p class="text-muted">Propreté et confort au quotidien</p>
+            <ul class="list-unstyled text-start">
+              <li><i class="fas fa-check-circle text-success me-2"></i>Nettoyage quotidien</li>
+              <li><i class="fas fa-check-circle text-success me-2"></i>Changement de serviettes</li>
+              <li><i class="fas fa-check-circle text-success me-2"></i>Pressing & repassage</li>
+              <li><i class="fas fa-check-circle text-success me-2"></i>Rangement du lit</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
+  
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Saha Beach</h5>
+          <p>Votre maison d'hôtes de charme au bord de la mer</p>
+        </div>
+        <div class="col-md-6 text-end">
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
